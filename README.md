@@ -31,7 +31,7 @@ of Conduct], or other unsporting behaviour.
 ## C) SUBMISSION
 instructions will be given during hackathon
 ## D) JUDGING CRITERIA
-eams will be judged on following points. During judging,
+Tams will be judged on following points. During judging,
 participants should try to describe what they did for each criterion
 in their project For example how well designed is the interface?
 For a website, this might be about how beautiful the CSS or
