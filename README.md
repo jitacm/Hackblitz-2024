@@ -28,9 +28,9 @@ changes or adding new features is not allowed.
 organizers’ discretion. Reasons might include but are not
 limited to breaking the Competition Rules, breaking the [Code
 of Conduct], or other unsporting behaviour.
-## C) SUBMISSION
+# C) SUBMISSION
 instructions will be given during hackathon
-## D) JUDGING CRITERIA
+# D) JUDGING CRITERIA
 eams will be judged on following points. During judging,
 participants should try to describe what they did for each criterion
 in their project For example how well designed is the interface?
