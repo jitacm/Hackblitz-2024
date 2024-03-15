@@ -1,0 +1,41 @@
+/* Basic CSS styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    /* background-color: black; */
+    opacity: 0.9;
+    color: white;
+}
+
+header {
+    background-color: rgb(255,255,255,0.2);
+    color: #fff;
+    padding: 20px;
+    height: 2rem;
+}
+a{
+    color: white;
+}
+
+h2{
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+}
