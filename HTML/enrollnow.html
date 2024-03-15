@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #success_message{ display: none;}
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+    <fieldset>
+    
+    <!-- Form Name -->
+    <legend>Enroll Now</legend>
+    
+    <!-- Text input-->
+    
+    <div class="form-group">
+      <label class="col-md-4 control-label">First Name</label>  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Text input-->
+    
+    <div class="form-group">
+      <label class="col-md-4 control-label" >Last Name</label> 
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Text input-->
+           <div class="form-group">
+      <label class="col-md-4 control-label">E-Mail</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+      <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- Text input-->
+           
+    <div class="form-group">
+      <label class="col-md-4 control-label">Phone #</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+      <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Text input-->
+          
+    <div class="form-group">
+      <label class="col-md-4 control-label">Address</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+      <input name="address" placeholder="Address" class="form-control" type="text">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Text input-->
+     
+    <div class="form-group">
+      <label class="col-md-4 control-label">City</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+      <input name="city" placeholder="city" class="form-control"  type="text">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Select Basic -->
+       
+    <div class="form-group"> 
+      <label class="col-md-4 control-label">State</label>
+        <div class="col-md-4 selectContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+        <select name="state" class="form-control selectpicker" >
+          <option value=" " >Please select your state</option>
+          <option>Andhra Pradesh</option>
+          <option>Arunachal Pradesh</option>
+          <option >Assam</option>
+          <option >Bihar</option>
+          <option >Chhattisgarh</option>
+          <option >Goa</option>
+          <option >Gujarat</option>
+          <option >Haryana</option>
+          <option >Himachal Pradesh</option>
+          <option> Jammu and Kashmir</option>
+          <option >Jharkhand</option>
+          <option >Karnataka</option>
+          </select>
+      </div>
+    </div>
+    </div>
+    
+    <!-- Text input-->
+    
+    <div class="form-group">
+      <label class="col-md-4 control-label">Pin Code</label>  
+        <div class="col-md-4 inputGroupContainer">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+      <input name="zip" placeholder="Pin Code" class="form-control"  type="text">
+        </div>
+    </div>
+    </div>
+    <!-- Button -->
+    <div class="form-group">
+      <label class="col-md-4 control-label"></label>
+      <div class="col-md-4">
+        <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+      </div>
+    </div>
+    
+    </fieldset>
+    </form>
+    </div>
+        </div><!-- /.container -->
+<script>
+      $(document).ready(function() {
+    $('#contact_form').bootstrapValidator({
+        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            first_name: {
+                validators: {
+                        stringLength: {
+                        min: 2,
+                    },
+                        notEmpty: {
+                        message: 'Please supply your first name'
+                    }
+                }
+            },
+             last_name: {
+                validators: {
+                     stringLength: {
+                        min: 2,
+                    },
+                    notEmpty: {
+                        message: 'Please supply your last name'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your email address'
+                    },
+                    emailAddress: {
+                        message: 'Please supply a valid email address'
+                    }
+                }
+            },
+            phone: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your phone number'
+                    },
+                    phone: {
+                        country: 'US',
+                        message: 'Please supply a vaild phone number with area code'
+                    }
+                }
+            },
+            address: {
+                validators: {
+                     stringLength: {
+                        min: 8,
+                    },
+                    notEmpty: {
+                        message: 'Please supply your street address'
+                    }
+                }
+            },
+            city: {
+                validators: {
+                     stringLength: {
+                        min: 4,
+                    },
+                    notEmpty: {
+                        message: 'Please supply your city'
+                    }
+                }
+            },
+            state: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please select your state'
+                    }
+                }
+            },
+            zip: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your zip code'
+                    },
+                    zipCode: {
+                        country: 'US',
+                        message: 'Please supply a vaild zip code'
+                    }
+                }
+            },
+            comment: {
+                validators: {
+                      stringLength: {
+                        min: 10,
+                        max: 200,
+                        message:'Please enter at least 10 characters and no more than 200'
+                    },
+                    notEmpty: {
+                        message: 'Please supply a description of your project'
+                    }
+                    }
+                }
+            }
+        })
+        .on('success.form.bv', function(e) {
+            $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+                $('#contact_form').data('bootstrapValidator').resetForm();
+
+            // Prevent form submission
+            e.preventDefault();
+
+            // Get the form instance
+            var $form = $(e.target);
+
+            // Get the BootstrapValidator instance
+            var bv = $form.data('bootstrapValidator');
+
+            // Use Ajax to submit form data
+            $.post($form.attr('action'), $form.serialize(), function(result) {
+                console.log(result);
+            }, 'json');
+        });
+});
+
+
+</script>
+</body>
+</html>
