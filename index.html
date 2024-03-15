@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Language Learning Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#lesson">Lessons</a></li>
+            <li><a href="#pronunciation">Pronunciation Practice</a></li>
+            <li><a href="#exercises">Exercises</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="lesson">
+            <h2>Lessons</h2>
+            <select id="languageSelector">
+                <option value="english">English</option>
+                <option value="spanish">Spanish</option>
+                <!-- Add more language options as needed -->
+            </select>
+            <div id="lessonContent">
+                <!-- Content will be loaded dynamically based on language selection -->
+            </div>
+        </section>
+        <section id="pronunciation">
+            <h2>Pronunciation Practice</h2>
+            <p>Record yourself pronouncing the words below and compare with native pronunciation:</p>
+            <ul id="pronunciationList">
+                <!-- Pronunciation practice words will be loaded dynamically -->
+            </ul>
+            <button id="startRecording">Start Recording</button>
+            <button id="stopRecording">Stop Recording</button>
+        </section>
+        <section id="exercises">
+            <h2>Exercises</h2>
+            <div id="exerciseContent">
+                <!-- Exercise questions will be loaded dynamically -->
+            </div>
+            <button id="checkAnswers">Check Answers</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Language Learning Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

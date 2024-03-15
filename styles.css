@@ -1,0 +1,29 @@
+/* Add your styles here */
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+select {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 10px;
+}
