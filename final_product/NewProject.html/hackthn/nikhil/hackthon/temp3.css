@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(20, 17, 17);
+    color: white;
+}
+
+header img{
+    height: 90px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+
+header{
+    display: flex;
+    flex-direction: row;
+}
+
+.profile{
+    display: flex;
+}
+.profile-info p{
+    font-size:18px;
+}
+.profile-skills li{
+    font-size:18px;
+}
+.education li{
+    font-size:18px;
+}
+.experience li{
+    font-size: 18px;
+}
+.projects li{
+    font-size:18px;
+}
+main{
+    /* background-image: url("back.jpg"); */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* text-align: center; */
+}
+
+.profile-info{
+    width: 800px;
+}
