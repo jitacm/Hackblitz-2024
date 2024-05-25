@@ -64,4 +64,4 @@ mistakes, and learning new things. If your code isn’t production
 ready, we’re not going to mark you down. - How well you pitch.
 Code is about building and learning, not about selling. - How well
 the project solves a problem. You can build something totally
-useless and as long as you’re learning and having fun.
+useless and as long as you’re learning and having fun..
