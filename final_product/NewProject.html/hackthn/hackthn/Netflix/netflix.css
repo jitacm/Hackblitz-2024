@@ -1,0 +1,24 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: black;
+}
+.main{
+    width:218vh;
+    /* height: 100vh; */
+    background-color:black;
+    color:white;
+}
+.image img{
+    padding-left:5rem;
+    height: 50rem;
+    width: 85rem;;
+}
+.main p{
+    padding:0 1.5rem 0 1.5rem;
+}
+.code a{
+    padding-left:2rem;
+    font-size: 17px;
+    color:rgb(173, 173, 243);
+}

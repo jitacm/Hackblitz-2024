@@ -1,0 +1,200 @@
+.header {
+  background-color: white;
+  margin-bottom: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.title-banner {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.title-banner h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.title-banner span {
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+}
+
+.title-banner h3 {
+  font-family: "Concert One", cursive;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.title-banner h4 {
+  margin: 10px 0 20px;
+}
+
+.search-tool {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px auto;
+  padding-top: 20px;
+  max-width: 900px;
+  border-radius: 20px;
+  color: black;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 800px;
+}
+
+.column {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2px;
+}
+
+.srch-w-1 {
+  width: 75%;
+}
+
+.srch-w-2 {
+  width: 25%;
+}
+
+.business-type {
+  text-align: center;
+  font-size: x-large;
+  /* width: 100%; */
+  display: block;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  /* font-size: 20px; */
+}
+
+.query-box {
+  width: 100%;
+  height: 50px;
+  background-color: #d4d4d4;
+  color: black;
+  border-color: #d4850e;
+  border: black;
+  display: block;
+  margin: auto;
+  max-width: 500px;
+}
+
+.search-btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  text-align: center;
+  padding: 5px 5px 10px 5px;
+}
+
+/* .reset-btn {
+  text-decoration: none;
+  color: rgb(0, 114, 76);
+  margin-right: 10px;
+  background-color: rgb(255, 255, 255);
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: 3px solid rgb(0, 114, 76);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+} */
+
+.reset-btn:hover {
+  background-color: rgb(0, 114, 76);
+  color: rgb(255, 255, 255);
+}
+
+.sub-btn {
+  color: rgb(0, 114, 76);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: 3px solid rgb(0, 114, 76);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.reset-btn-pointer {
+  text-decoration: none;
+  font-size: large;
+  color: rgb(0, 0, 0);
+  margin-right: 10px;
+  background-color: rgb(255, 255, 255);
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: 3px solid rgb(5, 5, 5);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+.sub-btn-pointer {
+  font-size: large;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  margin-right: 10px;
+  background-color: rgb(255, 255, 255);
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: 3px solid rgb(5, 5, 5);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+.sub-btn:focus {
+  outline: none;
+}
+
+.search-btn:focus {
+  outline: none;
+}
+
+.reset-btn-pointer:hover {
+  background-color: rgb(139, 139, 139);
+  color: rgb(255, 255, 255);
+}
+.sub-btn-pointer:hover {
+  background-color: rgb(139, 139, 139);
+  color: rgb(255, 255, 255);
+}
+
+
+.banner-image {
+    width: 100%;
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../assets/imagesDemo.jpg');
+    background-size: cover; /* Make the background image cover the entire container */
+    background-position: center; /* Center the background image */
+    height: 530px; /* Set a fixed height for the banner */
+  }
+  

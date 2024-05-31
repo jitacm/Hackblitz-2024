@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.logo-name {
+    padding: 3px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.bg-orange-signup {
+    background-color: #d4850e;
+    padding: 3px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.bg-orange-signup:hover {
+    background-color: #e69a29;
+}
