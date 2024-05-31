@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>eLEARNING - eLearning HTML Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <style>
+        /* Global Styles */
+        :root {
+            --primary: #06BBCC;
+            --light: #F0FBFC;
+            --dark: #181d38;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, sans-serif;
+            background-color: var(--light);
+        }
+        /* Header Styles */
+        header {
+            background-image: url('img2.jpg');
+            background-size: cover;
+            height: 10vh;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 100px;
+            padding: 0 20px;
+        }
+        .navbar-brand {
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            padding: 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #088;
+        }
+        /* Main Content Styles */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero-text {
+            text-align: center;
+            color: var(--dark);
+            margin-top: 50px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        .hero-text h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            animation: slideInLeft 1s forwards;
+        }
+        .hero-text p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            animation: slideInRight 1s forwards;
+        }
+        .cta-btn {
+            background-color: var(--primary);
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            animation: slideInUp 1s forwards;
+        }
+        .cta-btn:hover {
+            background-color: #0488A5;
+        }
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        .feature {
+            text-align: center;
+            flex-basis: 30%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: slideInUp 1s forwards;
+        }
+        .feature h3 {
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+        .feature p {
+            color: var(--dark);
+        }
+        /* Footer Styles */
+        footer {
+            background-color: var(--dark);
+            color: #fff;
+            text-align: center;
+            height: 40px;
+        }
+        footer p {
+            margin-bottom:5%;
+            margin-top: 8%;
+        }
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @keyframes slideInRight {
+            from {
+                transform: translateX(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @keyframes slideInUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+         /* Font */
+    @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+    
+    /* Design */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+    
+    html {
+      background-color: #ecf9ff;
+    }
+    
+    body {
+      color: #272727;
+      font-family: 'Quicksand', serif;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 0;
+      padding: 1rem;
+    }
+    
+    .main{
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    h1 {
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    img {
+      align-self: center;
+      height: 250px;
+      max-width: 100%;
+      vertical-align: middle;
+    }
+    
+    .btn {
+      color: #ffffff;
+      padding: 0.8rem;
+      font-size: 14px;
+      text-transform: uppercase;
+      border-radius: 4px;
+      font-weight: 400;
+      display: block;
+      width: 100%;
+      cursor: pointer;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: transparent;
+    }
+    
+    .btn:hover {
+      background-color: rgba(255, 255, 255, 0.12);
+    }
+    
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .cards_item {
+      display: flex;
+      padding: 1rem;
+    }
+    
+    @media (min-width: 40rem) {
+      .cards_item {
+        width: 50%;
+      }
+    }
+    
+    @media (min-width: 56rem) {
+      .cards_item {
+        width: 33.3333%;
+      }
+    }
+    
+    .card {
+      background-color: white;
+      border-radius: 0.25rem;
+      box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    
+    .card_content {
+      padding: 1rem;
+      background: linear-gradient(to bottom left, #5356FF 40%, #378CE7 100%);
+    }
+    
+    .card_title {
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+      margin: 0px;
+    }
+    
+    .card_text {
+      color: #ffffff;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      margin-bottom: 1.25rem;    
+      font-weight: 400;
+    }
+    .made_by{
+      font-weight: 400;
+      font-size: 13px;
+      margin-top: 35px;
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="navbar-brand">eLEARNING</a>
+            <ul>
+                <li><a href="animated_index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="hero-text">
+            <h2>Learn Anywhere, Anytime</h2>
+            <p>Join millions of learners from around the world who are mastering new skills, advancing their careers, and exploring new hobbies on our platform.</p>
+        </div>
+    </header><br><br><br><br><br><br><br><br><br>
+    <!-- Navbar End -->
+
+    <!-- Categories Start -->
+    <div class="main">
+        <h1><b>Programming Languages</b> </h1>
+        <ul class="cards">
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1200px-Logo_C_sharp.svg.png"></div>
+              <div class="card_content">
+                <h2 class="card_title">C#</h2>
+                <p class="card_text">It is a powerful, object-oriented programming language developed by Microsoft. It is widely used for building a variety of applications, including web, desktop, and mobile applications, as well as games and enterprise software.</p>
+                <button class="btn card_btn">Enroll Now</button>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/695px-C_Programming_Language.svg.png"></div>
+              <div class="card_content">
+                <h2 class="card_title">C</h2>
+                <p class="card_text">C is a versatile programming language known for its efficiency and portability, widely used in system software, embedded systems, and application development. It offers low-level memory manipulation and high-level functionalities, making it a powerful choice for various programming tasks.</p>
+                <button class="btn card_btn" href="enrollnow.html">Enroll Now</button>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="https://i.pinimg.com/736x/92/60/dd/9260dd459aa4566cfa25e86a3f10ea1b.jpg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Python</h2>
+                <p class="card_text">Python is a versatile high-level programming language known for its simplicity and readability. It is widely used in various domains, including web development, data analysis, artificial intelligence, and scientific computing.</p>
+                <button class="btn card_btn" href="enrollnow.html">Enroll Now</button>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="data:image/png;base64,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"></div>
+              <div class="card_content">
+                <h2 class="card_title">Java</h2>
+                <p class="card_text">Java is a widely-used programming language known for its platform independence and versatility. It's favored for its robustness, extensive libraries, and compatibility across various devices and operating systems.</p>
+                
+                <button class="btn card_btn" href="enrollnow.html">Enroll Now</button>
+            </a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="data:image/png;base64,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"></div>
+              <div class="card_content">
+                <h2 class="card_title">R</h2>
+                <p class="card_text">R is a powerful programming language and environment specifically designed for statistical computing and graphics. It offers a wide range of statistical and graphical techniques, making it a popular choice for data analysis and visualization tasks.</p>
+                <button class="btn card_btn" href="enrollnow.html">Enroll Now</button>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="data:image/png;base64,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"></div>
+              <div class="card_content">
+                <h2 class="card_title">Postgresql</h2>
+                <p class="card_text">PostgreSQL is an open-source relational database management system known for its robustness, extensibility, and adherence to SQL standards. It offers features like ACID compliance, support for JSON, and advanced indexing capabilities, making it a popular choice for enterprise-level applications.</p>
+                <button class="btn card_btn" href="enrollnow.html">Enroll Now</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    <!-- Categories Start -->
+</body>
+
+</html>
